@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Serverless</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <img src="logo.png">
+    <div id="site">
+        <div id="menu">
+            <button class="command" onclick="run_panel()">Run</button>
+            <button class="command" onclick="upload_panel()">Upload</button>
+            <button class="command" onclick="update_panel()">Update</button>
+            <button class="command" onclick="get_lambda_panel()">Get Lambda</button>
+            <button class="command" onclick="delete_panel()">Delete</button>
+            <button class="command" onclick="get_token_panel()">Get Token</button>
+        </div>
+
+        <div id = "panels">
+
+            <div class = "panel" id = "run_panel">
+                <form id = "run" onsubmit="javascript:run(); return false;">
+                    <input type="text" value="helloworld">
+                    <input type="number" value="1">
+                    <input type="text" value="token">
+                    <button type="submit" value="send" class="submit">Send</button>
+                    <div id="output_run"></div>
+                </form>
+            </div>
+
+            <div class = "panel" id = "upload_panel">
+                <form id = "upload" onsubmit="javascript:upload(); return false;">
+                        <input type="text" value="helloworld">
+                        <select>
+                            <option>Python3</option>
+                        </select>
+                        <input type="file">
+                        <button type="submit" value="send" class="submit">Send</button>
+                        <input id="upload_token" value="token" readonly>
+                </form>
+            </div>
+
+            <div class = "panel" id = "update_panel">
+                <form id = "update" onsubmit="javascript:update(); return false;">
+                    <input type="text" value="helloworld">
+                    <select>
+                        <option>Python3</option>
+                    </select>
+                    <input type="file">
+                    <input id="token" value="token">
+                    <button type="submit" value="send" class="submit">Send</button>
+                    <input id="update_token" value="token" readonly>
+                </form>
+            </div>
+
+            <div class = "panel" id = "get_lambda_panel">
+                <form id = "get_lambda" onsubmit="javascript:get_lambda(); return false;">
+                    <input type="text" value="helloworld">
+                    <input value="token">
+                    <button type="submit" value="send" class="submit">Send</button>
+                    <div id="output_get_lambda"></div>
+                </form>
+            </div>
+
+            <div class = "panel" id = "delete_panel">
+                <form id = "delete" onsubmit="javascript:delete_lambda(); return false;">
+                    <input type="text" value="helloworld">
+                    <input type="text" value="token">
+                    <button type="submit" value="send" class="submit">Send</button>
+                    <div id="output_delete"></div>
+                </form>
+            </div>
+
+            <div class = "panel" id = "get_token_panel">
+                <form id = "get_token" onsubmit="javascript:get_token(); return false;">
+                    <input type="text" value="helloworld">
+                    <input value="token">
+                    <input type="date" value="2020-12-12">
+                    <button type="submit" value="send" class="submit">Send</button>
+                    <input id="output_get_token" value="token" readonly>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

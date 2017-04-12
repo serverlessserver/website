@@ -1,0 +1,80 @@
+* {
+    margin: 12px;
+    font-size: 20px;
+}
+
+img {
+    width: 250px;
+    height: 100px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#site {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.command {
+    background-color: rgba(76, 175, 80, 0.73); /* Green */
+    border: none;
+    color: white;
+    padding: 20px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.submit {
+    background-color: rgba(76, 175, 80, 0.73); /* Green */
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.submit:hover {
+    background-color: rgb(76, 175, 80);
+}
+
+.command:hover {
+    background-color: rgb(76, 175, 80);
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+#panels {
+    margin: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input {
+    height: 25px;
+}
